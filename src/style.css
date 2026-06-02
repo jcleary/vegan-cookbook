@@ -211,10 +211,84 @@ img { display: block; max-width: 100%; }
 /* ---------- print ---------- */
 
 @media print {
-  body { background: #fff; color: #000; font-size: 14px; }
+  body { background: #fff; color: #000; font-size: 13px; }
   header, nav, .no-print, footer, .btn, .chip { display: none !important; }
   .print-only { display: block !important; }
+  .screen { animation: none; }
   h1, h2, h3 { font-family: Georgia, serif; }
+
+  /* recipe page: purpose-built print layout */
+  .print-recipe { padding: 0; }
+
+  .print-hero {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .print-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px 10px;
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #ccc;
+  }
+  .print-stat-label { font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .07em; color: #888; }
+  .print-stat-value { font-size: 14px; font-weight: 700; }
+
+  .print-ingredients {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: 18px;
+  }
+  .print-ingredients li {
+    display: flex;
+    gap: 7px;
+    padding: 3px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+    break-inside: avoid;
+  }
+  .print-ing-qty { min-width: 52px; font-weight: 700; flex-shrink: 0; }
+
+  .print-method { }
+  .print-steps { list-style: none; margin: 0; padding: 0; }
+  .print-steps li {
+    display: flex;
+    gap: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 12.5px;
+    line-height: 1.5;
+    align-items: baseline;
+  }
+  .print-step-num {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: #eee;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 11px;
+  }
+  .print-notes {
+    margin-top: 12px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
 
   /* shopping list */
   .shopping-list-print { padding: 20px; }
@@ -222,10 +296,4 @@ img { display: block; max-width: 100%; }
   .print-category h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 8px; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
   .print-item { display: flex; gap: 10px; padding: 4px 0; font-size: 14px; border-bottom: 1px solid #eee; }
   .print-qty { min-width: 80px; font-weight: 700; }
-
-  /* recipe page */
-  .recipe-hero, .recipe-body { grid-template-columns: 1fr !important; gap: 20px !important; }
-  .ingredients-col { position: static !important; }
-  .card { box-shadow: none !important; border: 1px solid #ccc !important; }
-  .screen { animation: none; }
 }

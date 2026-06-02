@@ -164,14 +164,14 @@ export default function Recipe({ id, recipes, navigate }) {
 
   return (
     <div className="screen">
-      <div className="wrap" style={{ paddingTop: 22, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+      <div className="wrap no-print" style={{ paddingTop: 22, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
         <button className="btn btn-ghost" onClick={() => navigate('#/')} style={{ padding: '9px 16px' }}>
           <Icon name="back" size={16} /> Back
         </button>
       </div>
 
       {/* HERO */}
-      <section className="wrap" style={{ paddingTop: 22 }}>
+      <section className="wrap no-print" style={{ paddingTop: 22 }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.02fr)', gap: 40, alignItems: 'center' }} className="recipe-hero">
           <div style={{ position: 'relative', aspectRatio: '4 / 3', borderRadius: 'var(--radius-l)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
             <FoodImage recipe={recipe} />
@@ -239,7 +239,7 @@ export default function Recipe({ id, recipes, navigate }) {
       </section>
 
       {/* BODY */}
-      <section className="wrap" style={{ marginTop: 36 }}>
+      <section className="wrap no-print" style={{ marginTop: 36 }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 360px) minmax(0, 1fr)', gap: 48, alignItems: 'start' }} className="recipe-body">
 
           {/* INGREDIENTS */}
@@ -293,6 +293,68 @@ export default function Recipe({ id, recipes, navigate }) {
               </div>
             )}
           </div>
+        </div>
+      </section>
+
+      {/* PRINT-ONLY LAYOUT */}
+      <section className="print-only print-recipe" style={{ display: 'none' }}>
+        <div className="print-hero">
+          <div className="print-img-col">
+            <div style={{ aspectRatio: '4/3', borderRadius: 8, overflow: 'hidden' }}>
+              <FoodImage recipe={recipe} />
+            </div>
+            <div className="print-stats">
+              {[
+                { label: 'Prep',   value: `${recipe.prep} min` },
+                { label: 'Cook',   value: `${recipe.cook} min` },
+                { label: 'Total',  value: `${total} min` },
+                { label: 'Serves', value: recipe.servings },
+                recipe.difficulty ? { label: 'Skill', value: recipe.difficulty } : null,
+              ].filter(Boolean).map(s => (
+                <div key={s.label} className="print-stat">
+                  <div className="print-stat-label">{s.label}</div>
+                  <div className="print-stat-value">{s.value}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="print-text-col">
+            <h1 style={{ fontSize: 24, lineHeight: 1.1 }}>{recipe.name}</h1>
+            <p style={{ fontSize: 13, color: '#555', marginTop: 6, lineHeight: 1.5 }}>{recipe.description}</p>
+            {recipe.liked_by?.length > 0 && (
+              <p style={{ fontSize: 12, marginTop: 6, color: '#666' }}>Loved by {recipe.liked_by.join(', ')}</p>
+            )}
+            <h2 style={{ fontSize: 15, marginTop: 14, marginBottom: 6 }}>Ingredients</h2>
+            <ul className="print-ingredients">
+              {recipe.ingredients.map((ing, i) => {
+                const fmt = formatIngredient(ing, 'metric', 1)
+                const measure = [fmt.qty, fmt.unit].filter(Boolean).join(' ')
+                return (
+                  <li key={i}>
+                    <span className="print-ing-qty">{measure || '—'}</span>
+                    <span>{ing.item}{ing.note ? <em> · {ing.note}</em> : null}</span>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        </div>
+
+        <div className="print-method">
+          <h2 style={{ fontSize: 16, marginBottom: 10 }}>Method</h2>
+          <ol className="print-steps">
+            {recipe.steps.map((step, i) => (
+              <li key={i}>
+                <span className="print-step-num">{i + 1}</span>
+                <span>{step}</span>
+              </li>
+            ))}
+          </ol>
+          {recipe.notes && (
+            <div className="print-notes">
+              <strong>Notes: </strong>{recipe.notes}
+            </div>
+          )}
         </div>
       </section>
 

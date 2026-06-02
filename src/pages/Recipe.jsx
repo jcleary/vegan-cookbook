@@ -297,12 +297,22 @@ export default function Recipe({ id, recipes, navigate }) {
       </section>
 
       {/* PRINT-ONLY LAYOUT */}
-      <section className="print-only print-recipe" style={{ display: 'none' }}>
+      <section className="print-recipe">
         <div className="print-hero">
           <div className="print-img-col">
-            <div style={{ aspectRatio: '4/3', borderRadius: 8, overflow: 'hidden' }}>
-              <FoodImage recipe={recipe} />
-            </div>
+            <img
+              className="print-recipe-img"
+              src={`./images/recipes/${recipe.id}.jpg`}
+              alt={recipe.name}
+              onError={e => {
+                if (!e.currentTarget.dataset.fb) {
+                  e.currentTarget.dataset.fb = '1'
+                  e.currentTarget.src = `./images/cuisine/${recipe.cuisine.toLowerCase().replace(/&/g, 'and').replace(/ /g, '-')}.jpg`
+                } else {
+                  e.currentTarget.style.display = 'none'
+                }
+              }}
+            />
             <div className="print-stats">
               {[
                 { label: 'Prep',   value: `${recipe.prep} min` },
@@ -359,6 +369,7 @@ export default function Recipe({ id, recipes, navigate }) {
       </section>
 
       {/* MORE */}
+
       {moreToShow.length > 0 && (
         <section className="wrap no-print" style={{ marginTop: 74, paddingBottom: 20 }}>
           <h2 style={{ fontSize: 28, marginBottom: 20 }}>More to try</h2>

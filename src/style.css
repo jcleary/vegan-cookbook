@@ -208,27 +208,31 @@ img { display: block; max-width: 100%; }
   .recipe-controls { flex-direction: column; align-items: stretch !important; }
 }
 
+/* print-recipe section: hidden on screen but fully rendered so images load */
+.print-recipe { height: 0; overflow: hidden; }
+
 /* ---------- print ---------- */
 
 @media print {
   body { background: #fff; color: #000; font-size: 13px; }
   header, nav, .no-print, footer, .btn, .chip { display: none !important; }
-  .print-only { display: block !important; }
   .screen { animation: none; }
   h1, h2, h3 { font-family: Georgia, serif; }
 
   /* recipe page: purpose-built print layout */
-  .print-recipe { padding: 0; }
+  .print-recipe { height: auto !important; overflow: visible !important; padding: 0; }
 
   .print-hero {
     display: grid;
-    grid-template-columns: 190px 1fr;
+    grid-template-columns: 240px 1fr;
     gap: 20px;
     align-items: start;
     margin-bottom: 14px;
     padding-bottom: 14px;
     border-bottom: 1px solid #ccc;
   }
+
+  .print-recipe-img { display: block; width: 100%; border-radius: 6px; }
 
   .print-stats {
     display: grid;
@@ -251,7 +255,7 @@ img { display: block; max-width: 100%; }
   .print-ingredients li {
     display: flex;
     gap: 7px;
-    padding: 3px 0;
+    padding: 6px 0;
     border-bottom: 1px solid #eee;
     font-size: 12px;
     break-inside: avoid;
@@ -263,7 +267,7 @@ img { display: block; max-width: 100%; }
   .print-steps li {
     display: flex;
     gap: 10px;
-    padding: 5px 0;
+    padding: 9px 0;
     border-bottom: 1px solid #eee;
     font-size: 12.5px;
     line-height: 1.5;

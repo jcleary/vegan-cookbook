@@ -1,0 +1,145 @@
+{
+  "id": "falafel-bowls",
+  "name": "Crispy Baked Falafel Bowls",
+  "description": "Herb-packed chickpea falafel baked until deeply golden and crisp, served over couscous with a generous pour of lemon tahini sauce — great for meal prep.",
+  "cuisine": "Middle Eastern",
+  "servings": 4,
+  "prep": 20,
+  "cook": 25,
+  "tags": ["Meal prep", "High protein"],
+  "liked_by": ["John", "Sally", "Fleur"],
+  "glyph": "🧆",
+  "c1": "#7d8c3e",
+  "c2": "#4d591f",
+  "difficulty": "Medium",
+  "ingredients": [
+    {
+      "item": "tinned chickpeas, drained well",
+      "qty": 480,
+      "unit": "g",
+      "type": "mass",
+      "key": "chickpeas",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "small onion",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "onion",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "garlic",
+      "qty": 3,
+      "unit": "clove",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "parsley",
+      "qty": 1,
+      "unit": "handful",
+      "type": "count",
+      "key": "parsley",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "fresh coriander",
+      "qty": 1,
+      "unit": "handful",
+      "type": "count",
+      "key": "coriander",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "ground cumin",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "cumin",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground coriander",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ground coriander",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "chickpea flour",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "chickpea flour",
+      "category": "baking",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "olive oil",
+      "qty": 3,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "olive oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "couscous or rice, cooked",
+      "qty": 200,
+      "unit": "g",
+      "type": "mass",
+      "key": "couscous",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "tahini",
+      "qty": 3,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "tahini",
+      "category": "nuts & seeds",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "lemon",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lemon",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    }
+  ],
+  "steps": [
+    "Heat the oven to 200°C. Pulse the chickpeas, onion, garlic, herbs, spices and chickpea flour in a food processor to a coarse, holdable paste. Don't over-blend.",
+    "Roll into 16 walnut-sized balls and flatten slightly. Brush all over with olive oil and place on a lined tray.",
+    "Bake for 25 minutes, turning halfway, until deeply golden and crisp.",
+    "Whisk the tahini with lemon juice and enough cold water to make a pourable, creamy sauce.",
+    "Build bowls with couscous, falafel, fresh salad and a generous drizzle of tahini sauce."
+  ],
+  "notes": "Chill the mix for 20 minutes before shaping if you have time — it firms up and holds together far better in the oven."
+}

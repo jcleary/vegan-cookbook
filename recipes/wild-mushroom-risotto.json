@@ -1,0 +1,136 @@
+{
+  "id": "wild-mushroom-risotto",
+  "name": "Wild Mushroom Risotto",
+  "description": "Earthy porcini and golden chestnut mushrooms stirred into a creamy, deeply savoury risotto — an elegant midweek dinner that rewards patience.",
+  "cuisine": "Italian",
+  "servings": 4,
+  "prep": 10,
+  "cook": 35,
+  "tags": ["Comfort food", "Date night"],
+  "liked_by": ["John", "Sally", "Fleur"],
+  "glyph": "🍄",
+  "c1": "#9b7b4f",
+  "c2": "#5f4427",
+  "difficulty": "Medium",
+  "ingredients": [
+    {
+      "item": "hot vegetable stock",
+      "qty": 1200,
+      "unit": "ml",
+      "type": "vol",
+      "key": "vegetable stock",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "dried porcini",
+      "qty": 30,
+      "unit": "g",
+      "type": "mass",
+      "key": "mushrooms",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "olive oil",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "olive oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "small onion",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "onion",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "garlic",
+      "qty": 2,
+      "unit": "clove",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "arborio rice",
+      "qty": 300,
+      "unit": "g",
+      "type": "mass",
+      "key": "risotto rice",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "dry white wine",
+      "qty": 120,
+      "unit": "ml",
+      "type": "vol",
+      "key": "white wine",
+      "category": "oils & condiments",
+      "staple": false,
+      "note": "optional"
+    },
+    {
+      "item": "chestnut mushrooms, sliced",
+      "qty": 250,
+      "unit": "g",
+      "type": "mass",
+      "key": "mushrooms",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "vegan butter",
+      "qty": 30,
+      "unit": "g",
+      "type": "mass",
+      "key": "vegan butter",
+      "category": "dairy alternatives",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "nutritional yeast",
+      "qty": 20,
+      "unit": "g",
+      "type": "mass",
+      "key": "nutritional yeast",
+      "category": "dairy alternatives",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "flat-leaf parsley",
+      "qty": 1,
+      "unit": "handful",
+      "type": "count",
+      "key": "parsley",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    }
+  ],
+  "steps": [
+    "Soak the dried porcini in 200ml of the hot stock for 10 minutes, then lift out, chop, and keep the soaking liquid.",
+    "Sweat the onion in olive oil over medium-low heat until soft, then add garlic and the fresh mushrooms. Cook until golden, about 8 minutes.",
+    "Stir in the rice and toast for two minutes until the edges look glassy. Pour in the wine and let it bubble away.",
+    "Add the stock a ladleful at a time, stirring often, waiting until each addition is absorbed before the next. Include the porcini and their liquid.",
+    "After 18–20 minutes the rice should be creamy with a slight bite. Beat in the vegan butter and nutritional yeast.",
+    "Rest off the heat for two minutes, then scatter with parsley and serve at once."
+  ],
+  "notes": "Keep your stock simmering on a back burner — adding cold stock shocks the rice and slows the cook. A squeeze of lemon at the end lifts everything."
+}

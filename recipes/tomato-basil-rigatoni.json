@@ -1,0 +1,146 @@
+{
+  "id": "tomato-basil-rigatoni",
+  "name": "Creamy Tomato & Basil Rigatoni",
+  "description": "A silky, cashew-cream tomato sauce clings to every piece of rigatoni — comforting, family-friendly, and ready in under 30 minutes.",
+  "cuisine": "Italian",
+  "servings": 4,
+  "prep": 15,
+  "cook": 25,
+  "tags": ["One-pot sauce", "Family favourite", "Freezer-friendly"],
+  "liked_by": ["John", "Sally", "Jack", "Lucas"],
+  "glyph": "🍝",
+  "c1": "#d9663f",
+  "c2": "#a83c2a",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "rigatoni or penne",
+      "qty": 400,
+      "unit": "g",
+      "type": "mass",
+      "key": "pasta",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "olive oil",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "olive oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "brown onion",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "onion",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "garlic",
+      "qty": 3,
+      "unit": "clove",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "tomato purée",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "tomato puree",
+      "category": "oils & condiments",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "tinned chopped tomatoes",
+      "qty": 800,
+      "unit": "g",
+      "type": "mass",
+      "key": "tinned tomatoes",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "raw cashews, soaked",
+      "qty": 80,
+      "unit": "g",
+      "type": "mass",
+      "key": "cashews",
+      "category": "nuts & seeds",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "oat milk",
+      "qty": 150,
+      "unit": "ml",
+      "type": "vol",
+      "key": "plant milk",
+      "category": "dairy alternatives",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "dried oregano",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "oregano",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "chilli flakes",
+      "qty": 1,
+      "unit": "pinch",
+      "type": "count",
+      "key": "chilli flakes",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": "optional"
+    },
+    {
+      "item": "fresh basil",
+      "qty": 1,
+      "unit": "handful",
+      "type": "count",
+      "key": "basil",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "sea salt & black pepper",
+      "qty": 0,
+      "unit": "to taste",
+      "type": "count",
+      "key": "salt",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    }
+  ],
+  "steps": [
+    "Bring a large pot of well-salted water to the boil and cook the pasta until al dente. Reserve a cup of pasta water before draining.",
+    "Meanwhile, warm the olive oil in a deep pan over medium heat. Soften the onion for 6–7 minutes until translucent, then add the garlic and cook for one more minute.",
+    "Stir in the tomato purée and cook for a minute to deepen the colour, then pour in the chopped tomatoes. Simmer gently for 12 minutes.",
+    "Blend the soaked cashews with the oat milk until completely smooth. Stir this cream through the sauce along with the oregano and chilli flakes.",
+    "Tip the drained pasta into the sauce, loosening with a splash of pasta water until it coats every piece. Season to taste.",
+    "Fold through the torn basil off the heat and serve with extra pepper."
+  ],
+  "notes": "Soak the cashews in just-boiled water for 15 minutes if you forgot to do it overnight — they'll still blend silky. The sauce freezes beautifully for up to 3 months."
+}

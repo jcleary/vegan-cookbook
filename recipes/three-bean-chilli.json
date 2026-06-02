@@ -1,0 +1,145 @@
+{
+  "id": "three-bean-chilli",
+  "name": "Smoky Three-Bean Chilli",
+  "description": "A deeply smoky, richly spiced chilli loaded with three kinds of beans and a secret square of dark chocolate — perfect for batch cooking and feeding a crowd.",
+  "cuisine": "Mexican",
+  "servings": 6,
+  "prep": 15,
+  "cook": 40,
+  "tags": ["Batch cook", "Freezer-friendly", "Feeds a crowd"],
+  "liked_by": ["John", "Sally", "Fleur"],
+  "glyph": "🌶️",
+  "c1": "#b14430",
+  "c2": "#6e2418",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "olive oil",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "olive oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "onions, diced",
+      "qty": 2,
+      "unit": "piece",
+      "type": "count",
+      "key": "onion",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "red pepper, diced",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "pepper",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "garlic, crushed",
+      "qty": 4,
+      "unit": "clove",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "smoked paprika",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "smoked paprika",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground cumin",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "cumin",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground cinnamon",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "cinnamon",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "mixed tinned beans, drained",
+      "qty": 1200,
+      "unit": "g",
+      "type": "mass",
+      "key": "mixed beans",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "tinned chopped tomatoes",
+      "qty": 800,
+      "unit": "g",
+      "type": "mass",
+      "key": "tinned tomatoes",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "vegetable stock",
+      "qty": 300,
+      "unit": "ml",
+      "type": "vol",
+      "key": "vegetable stock",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "dark chocolate",
+      "qty": 20,
+      "unit": "g",
+      "type": "mass",
+      "key": "dark chocolate",
+      "category": "baking",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "lime, juiced",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lime",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    }
+  ],
+  "steps": [
+    "Soften the onions and pepper in oil over medium heat for 10 minutes until sweet.",
+    "Stir in the garlic and all the spices and cook for a minute until the kitchen smells incredible.",
+    "Add the beans, tomatoes and stock, bring to a simmer and cook uncovered for 30 minutes, stirring now and then.",
+    "Grate in the dark chocolate and stir until melted — it rounds out the smokiness.",
+    "Finish with lime juice and salt to taste. Serve with rice, jacket potatoes or scooped up with tortilla chips."
+  ],
+  "notes": "The chocolate is the secret — it adds depth, not sweetness. This thickens as it sits, so loosen with a splash of water when reheating."
+}

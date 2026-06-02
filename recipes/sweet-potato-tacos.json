@@ -1,0 +1,135 @@
+{
+  "id": "sweet-potato-tacos",
+  "name": "Black Bean & Sweet Potato Tacos",
+  "description": "Caramelised sweet potato and smoky black beans piled into warm corn tortillas with quick lime slaw and creamy avocado — a crowd-pleasing taco night for all ages.",
+  "cuisine": "Mexican",
+  "servings": 4,
+  "prep": 15,
+  "cook": 30,
+  "tags": ["Crowd-pleaser", "Make-ahead", "Kid friendly"],
+  "liked_by": ["Jack", "Lucas", "Fleur", "Sally"],
+  "glyph": "🌮",
+  "c1": "#d2723b",
+  "c2": "#7c3f1d",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "sweet potatoes, cubed",
+      "qty": 700,
+      "unit": "g",
+      "type": "mass",
+      "key": "sweet potato",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "olive oil",
+      "qty": 3,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "olive oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "smoked paprika",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "smoked paprika",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground cumin",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "cumin",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "tinned black beans, drained",
+      "qty": 400,
+      "unit": "g",
+      "type": "mass",
+      "key": "black beans",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "garlic, crushed",
+      "qty": 2,
+      "unit": "clove",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "small corn tortillas",
+      "qty": 8,
+      "unit": "piece",
+      "type": "count",
+      "key": "tortillas",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "red cabbage, shredded",
+      "qty": 150,
+      "unit": "g",
+      "type": "mass",
+      "key": "red cabbage",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "lime, juiced",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lime",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "ripe avocado",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "avocado",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "fresh coriander",
+      "qty": 1,
+      "unit": "handful",
+      "type": "count",
+      "key": "coriander",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    }
+  ],
+  "steps": [
+    "Heat the oven to 220°C. Toss the sweet potato with 2 tbsp oil, the paprika and cumin, then roast for 25–30 minutes until caramelised, turning once.",
+    "Warm the remaining oil in a pan, add the garlic and the drained black beans, and cook for 5 minutes, lightly crushing some with a fork.",
+    "Toss the shredded cabbage with the lime juice and a pinch of salt to make a quick slaw.",
+    "Warm the tortillas in a dry pan until soft and pliable.",
+    "Build each taco with beans, roasted sweet potato, slaw, sliced avocado and plenty of coriander."
+  ],
+  "notes": "A drizzle of chipotle-spiked vegan mayo takes these over the top. The roasted sweet potato keeps for three days for easy lunches."
+}

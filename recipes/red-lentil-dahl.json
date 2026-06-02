@@ -1,0 +1,135 @@
+{
+  "id": "red-lentil-dahl",
+  "name": "Golden Red Lentil Dahl",
+  "description": "A budget-friendly, deeply comforting dahl that comes together from the pantry — golden lentils simmered with warming spices and finished with creamy coconut milk.",
+  "cuisine": "Indian",
+  "servings": 4,
+  "prep": 5,
+  "cook": 30,
+  "tags": ["Budget", "Pantry staple", "Batch cook"],
+  "liked_by": ["John", "Sally", "Jack", "Lucas", "Fleur"],
+  "glyph": "🥘",
+  "c1": "#e0a93b",
+  "c2": "#9a6312",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "dried red lentils",
+      "qty": 300,
+      "unit": "g",
+      "type": "mass",
+      "key": "red lentils",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "vegetable stock",
+      "qty": 1000,
+      "unit": "ml",
+      "type": "vol",
+      "key": "vegetable stock",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "coconut oil",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "onion, diced",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "onion",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "garlic, sliced",
+      "qty": 3,
+      "unit": "clove",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "ginger, grated",
+      "qty": 20,
+      "unit": "g",
+      "type": "mass",
+      "key": "ginger",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "ground cumin",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "cumin",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "turmeric",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "turmeric",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "mustard seeds",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "mustard seeds",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "coconut milk",
+      "qty": 200,
+      "unit": "ml",
+      "type": "vol",
+      "key": "coconut milk",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "fresh coriander",
+      "qty": 1,
+      "unit": "handful",
+      "type": "count",
+      "key": "coriander",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    }
+  ],
+  "steps": [
+    "Rinse the lentils until the water runs clear, then add to a pot with the stock. Simmer for 20 minutes, skimming any foam, until collapsed and soft.",
+    "While they cook, fry the onion in oil until soft, then add garlic, ginger and the whole spices. Cook until aromatic.",
+    "Stir the spiced onion mixture into the lentils along with the coconut milk.",
+    "Loosen with a little water if needed and simmer for a final 5 minutes.",
+    "Season well and finish with fresh coriander and an optional tempering of sizzled mustard seeds."
+  ],
+  "notes": "For a tarka, sizzle extra mustard seeds and dried chilli in hot oil and pour over each bowl at the table — the drama is half the fun."
+}

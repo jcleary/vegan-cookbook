@@ -1,0 +1,156 @@
+{
+  "id": "chana-saag",
+  "name": "Chickpea & Spinach Curry",
+  "description": "A fragrant, protein-packed curry built from pantry staples — warmly spiced chickpeas bathed in a rich tomato-coconut sauce with wilted spinach.",
+  "cuisine": "Indian",
+  "servings": 4,
+  "prep": 10,
+  "cook": 25,
+  "tags": ["Pantry staple", "High protein", "Under 35 min"],
+  "liked_by": ["John", "Sally", "Fleur"],
+  "glyph": "🍛",
+  "c1": "#cf8a32",
+  "c2": "#8a4d1d",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "coconut or sunflower oil",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "large onion",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "onion",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "garlic",
+      "qty": 4,
+      "unit": "clove",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "fresh ginger, grated",
+      "qty": 20,
+      "unit": "g",
+      "type": "mass",
+      "key": "ginger",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "ground cumin",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "cumin",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground coriander",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ground coriander",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "turmeric",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "turmeric",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "garam masala",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "garam masala",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "tinned chickpeas, drained",
+      "qty": 800,
+      "unit": "g",
+      "type": "mass",
+      "key": "chickpeas",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "tinned chopped tomatoes",
+      "qty": 400,
+      "unit": "g",
+      "type": "mass",
+      "key": "tinned tomatoes",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "coconut milk",
+      "qty": 200,
+      "unit": "ml",
+      "type": "vol",
+      "key": "coconut milk",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "fresh spinach",
+      "qty": 200,
+      "unit": "g",
+      "type": "mass",
+      "key": "spinach",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "lemon, juiced",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lemon",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    }
+  ],
+  "steps": [
+    "Fry the onion in oil over medium heat for 8 minutes until soft and golden at the edges.",
+    "Add the garlic and ginger, cook for a minute, then stir in all the ground spices and toast for 30 seconds until fragrant.",
+    "Tip in the tomatoes and let them cook down for 5 minutes into a thick base.",
+    "Add the chickpeas and coconut milk, then simmer gently for 10 minutes so the flavours marry.",
+    "Stir the spinach through in handfuls until just wilted.",
+    "Finish with a good squeeze of lemon and season. Serve with rice or warm flatbread."
+  ],
+  "notes": "Mash a few of the chickpeas against the side of the pan to thicken the sauce naturally. It's even better the next day."
+}

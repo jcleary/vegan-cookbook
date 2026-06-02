@@ -1,0 +1,135 @@
+{
+  "id": "thai-green-curry",
+  "name": "Coconut Green Curry",
+  "description": "A vibrant, fragrant Thai green curry with silken coconut broth, tender tofu and crisp vegetables — quick to make and naturally gluten-free.",
+  "cuisine": "Thai",
+  "servings": 4,
+  "prep": 15,
+  "cook": 20,
+  "tags": ["Under 35 min", "Gluten-free"],
+  "liked_by": ["John", "Sally", "Fleur"],
+  "glyph": "🍲",
+  "c1": "#4f8a5e",
+  "c2": "#27502f",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "coconut oil",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "vegan green curry paste",
+      "qty": 3,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "curry paste",
+      "category": "oils & condiments",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "coconut milk",
+      "qty": 400,
+      "unit": "ml",
+      "type": "vol",
+      "key": "coconut milk",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "vegetable stock",
+      "qty": 200,
+      "unit": "ml",
+      "type": "vol",
+      "key": "vegetable stock",
+      "category": "tins & pulses",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "firm tofu, cubed",
+      "qty": 250,
+      "unit": "g",
+      "type": "mass",
+      "key": "tofu",
+      "category": "dairy alternatives",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "red pepper, sliced",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "pepper",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "green beans, trimmed",
+      "qty": 150,
+      "unit": "g",
+      "type": "mass",
+      "key": "green beans",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "baby corn",
+      "qty": 100,
+      "unit": "g",
+      "type": "mass",
+      "key": "baby corn",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "soy sauce",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "soy sauce",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "lime, juiced",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lime",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "Thai basil or coriander",
+      "qty": 1,
+      "unit": "handful",
+      "type": "count",
+      "key": "basil",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    }
+  ],
+  "steps": [
+    "Warm the coconut oil in a wide pan and fry the curry paste for a minute until aromatic.",
+    "Pour in the coconut milk and stock, stir to combine and bring to a gentle simmer.",
+    "Add the tofu, pepper, green beans and baby corn. Simmer for 12 minutes until the vegetables are tender but still vibrant.",
+    "Season with soy sauce and lime juice, tasting as you go for that salty-sour-sweet balance.",
+    "Tear over the herbs and serve with jasmine rice."
+  ],
+  "notes": "Check your curry paste — many contain fish sauce or shrimp, so look for a clearly labelled vegan one. Add at the end: a teaspoon of sugar if it needs rounding."
+}

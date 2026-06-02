@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function cuisineImagePath(cuisine) {
-  return `./images/cuisine/${cuisine.toLowerCase().replace(/ /g, '-')}.jpg`
+  return `./images/cuisine/${cuisine.toLowerCase().replace(/&/g, 'and').replace(/ /g, '-')}.jpg`
 }
 
 export default function FoodImage({ recipe }) {

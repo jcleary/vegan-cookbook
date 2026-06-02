@@ -1,0 +1,134 @@
+{
+  "id": "lentil-tomato-stew",
+  "name": "Lentil & Tomato Stew",
+  "description": "A budget-friendly, warming red lentil stew with cumin and cinnamon, ready in 30 minutes and perfect for mopping up with crusty bread.",
+  "cuisine": "Middle Eastern",
+  "servings": 3,
+  "prep": 5,
+  "cook": 30,
+  "tags": ["Dinner", "Budget friendly", "Quick"],
+  "liked_by": ["John", "Sally", "Jack"],
+  "glyph": "🍲",
+  "c1": "#F5A623",
+  "c2": "#C0392B",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "olive oil",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "olive_oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "onion, finely chopped",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "onion",
+      "category": "fresh produce",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "garlic cloves, finely grated",
+      "qty": 2,
+      "unit": "piece",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground cumin",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ground_cumin",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground cinnamon",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ground_cinnamon",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "red lentils, rinsed",
+      "qty": 250,
+      "unit": "g",
+      "type": "mass",
+      "key": "red_lentils",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "chopped tomatoes",
+      "qty": 400,
+      "unit": "g",
+      "type": "mass",
+      "key": "chopped_tomatoes",
+      "category": "tinned goods",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "vegetable stock",
+      "qty": 750,
+      "unit": "ml",
+      "type": "vol",
+      "key": "vegetable_stock",
+      "category": "tinned goods",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "lemon, juiced",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lemon",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "salt and pepper",
+      "qty": 1,
+      "unit": "pinch",
+      "type": "count",
+      "key": "salt_pepper",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "mint leaves",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "mint",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "optional, to serve"
+    }
+  ],
+  "steps": [
+    "Heat a large, high-sided frying pan over medium heat. Add the oil and onion with a pinch of salt and cook for 5 minutes until softened.",
+    "Add the garlic, cumin and cinnamon and cook for 1 minute until fragrant.",
+    "Add the lentils, chopped tomatoes and stock. Bring to the boil, then reduce to a simmer and cook for 20–25 minutes until the lentils are tender.",
+    "Season well with lemon juice, salt and pepper. Serve scattered with mint leaves if you like."
+  ],
+  "notes": "Great with crusty bread or flatbread for mopping up. Leftovers thicken overnight — loosen with a splash of water when reheating."
+}

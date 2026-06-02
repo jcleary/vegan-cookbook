@@ -1,0 +1,154 @@
+{
+  "id": "speedy-spicy-noodle-soup",
+  "name": "Speedy & Spicy Noodle Soup",
+  "description": "A katsu-inspired spicy noodle soup with carrots, curry and a fresh finish of spring onions — on the table in under 20 minutes.",
+  "cuisine": "Japanese",
+  "servings": 2,
+  "prep": 5,
+  "cook": 12,
+  "tags": ["Dinner", "Quick", "Soup"],
+  "liked_by": [],
+  "glyph": "🍜",
+  "c1": "#F5C842",
+  "c2": "#B85C1A",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "vegetable oil",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "vegetable_oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "onion, finely chopped",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "onion",
+      "category": "fresh produce",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "carrots, finely chopped",
+      "qty": 2,
+      "unit": "piece",
+      "type": "count",
+      "key": "carrots",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "garlic cloves, finely grated",
+      "qty": 4,
+      "unit": "piece",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "fresh root ginger, finely grated",
+      "qty": 10,
+      "unit": "g",
+      "type": "mass",
+      "key": "ginger",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "curry powder",
+      "qty": 1.5,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "curry_powder",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "vegan bouillon powder",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "bouillon_powder",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "soy sauce",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "soy_sauce",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "boiling water",
+      "qty": 1,
+      "unit": "l",
+      "type": "vol",
+      "key": "boiling_water",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "dried noodles",
+      "qty": 150,
+      "unit": "g",
+      "type": "mass",
+      "key": "noodles",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "spring onions, finely sliced",
+      "qty": 2,
+      "unit": "piece",
+      "type": "count",
+      "key": "spring_onions",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "to serve"
+    },
+    {
+      "item": "coriander sprigs",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "coriander",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "optional, to serve"
+    },
+    {
+      "item": "beansprouts",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "beansprouts",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "optional, handful, to serve"
+    }
+  ],
+  "steps": [
+    "Put the oil in a large pan and fry the onion and carrots over a low heat for 4–5 minutes until translucent and soft.",
+    "Add the garlic and ginger and fry for 1 minute until fragrant, then add the curry powder and cook, stirring regularly, for 1 minute.",
+    "Add the bouillon powder, soy sauce and boiling water. Bring to the boil, add the noodles and cook for 5–8 minutes until tender.",
+    "Sprinkle with spring onions, coriander and beansprouts if using, and serve."
+  ],
+  "notes": "Inspired by Japanese katsu curry. Use any dried noodles — ramen, udon or rice noodles all work well."
+}

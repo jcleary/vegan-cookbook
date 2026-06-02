@@ -1,0 +1,124 @@
+{
+  "id": "cold-avocado-noodles",
+  "name": "Cold Avocado Noodles",
+  "description": "A ready-in-15 bowl of soba noodles tossed in a creamy blended avocado sauce — salty, fresh, and aromatic.",
+  "cuisine": "Asian-inspired",
+  "servings": 2,
+  "prep": 10,
+  "cook": 5,
+  "tags": ["Lunch", "Dinner", "Quick", "No cook"],
+  "liked_by": ["Jack", "Lucas", "Fleur", "Sally", "John"],
+  "glyph": "🥑",
+  "c1": "#b8e0b0",
+  "c2": "#3d7a3a",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "soba noodles",
+      "qty": 150,
+      "unit": "g",
+      "type": "mass",
+      "key": "soba_noodles",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "avocados",
+      "qty": 2,
+      "unit": "piece",
+      "type": "count",
+      "key": "avocado",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "lime, zest and juice",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lime",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "finely grated zest and juice"
+    },
+    {
+      "item": "garlic clove, finely grated",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "fresh root ginger, finely grated",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ginger",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "coriander leaves",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "coriander",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "small handful"
+    },
+    {
+      "item": "sesame oil",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "sesame_oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "salt and pepper",
+      "qty": 1,
+      "unit": "pinch",
+      "type": "count",
+      "key": "salt_pepper",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "red chilli, diced",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "red_chilli",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "optional, or a few pinches of chilli flakes"
+    },
+    {
+      "item": "sesame seeds",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "sesame_seeds",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": "optional"
+    }
+  ],
+  "steps": [
+    "Bring a large pan of salted water to the boil and cook the soba noodles until al dente. Drain and run under cool water to stop the cooking.",
+    "While the noodles cook, scoop out the avocado flesh and add to a blender with the lime zest and juice, garlic, ginger, and coriander. Blitz until smooth, adding 2–3 tablespoons of water if needed to loosen.",
+    "Season the sauce well, then toss with the sesame oil and noodles.",
+    "Serve sprinkled with diced red chilli and sesame seeds, if using."
+  ],
+  "notes": "Add crispy chilli oil or extra sliced chillies if you like things extra spicy."
+}

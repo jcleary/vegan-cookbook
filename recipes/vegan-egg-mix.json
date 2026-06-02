@@ -1,0 +1,125 @@
+{
+  "id": "vegan-egg-mix",
+  "name": "Just Egg",
+  "description": "A blended mung bean batter that cooks up light and eggy — perfect for omelets, scrambles, and breakfast burritos in about 5 minutes.",
+  "cuisine": "American",
+  "servings": 4,
+  "prep": 10,
+  "cook": 5,
+  "tags": ["Breakfast", "High protein", "Meal prep"],
+  "liked_by": ["Jack", "Lucas", "Fleur", "Sally", "John"],
+  "glyph": "🍳",
+  "c1": "#f5d97a",
+  "c2": "#c48a14",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "dry yellow split mung beans (moong dal), soaked overnight",
+      "qty": 150,
+      "unit": "g",
+      "type": "mass",
+      "key": "mung beans",
+      "category": "pulses & lentils",
+      "staple": false,
+      "note": "Soak in cold water overnight, then drain before blending"
+    },
+    {
+      "item": "non-dairy milk",
+      "qty": 240,
+      "unit": "ml",
+      "type": "vol",
+      "key": "nondairy milk",
+      "category": "dairy alternatives",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "neutral oil (rapeseed or sunflower)",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "nutritional yeast",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "nutritional yeast",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "baking powder",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "baking powder",
+      "category": "baking",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "salt",
+      "qty": 1.5,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "salt",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "garlic powder",
+      "qty": 0.25,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "garlic powder",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "onion powder",
+      "qty": 0.25,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "onion powder",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "black pepper",
+      "qty": 1,
+      "unit": "pinch",
+      "type": "count",
+      "key": "black pepper",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": "To taste"
+    },
+    {
+      "item": "black salt (kala namak)",
+      "qty": 0.5,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "kala namak",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": "Optional — gives an eggy sulphur flavour"
+    }
+  ],
+  "steps": [
+    "Soak the mung beans in plenty of cold water overnight (at least 8 hours), then drain well.",
+    "Add the drained beans to a blender with the nondairy milk, oil, nutritional yeast, baking powder, salt, garlic powder, onion powder, pepper, and kala namak if using. Blend until completely smooth.",
+    "Transfer to a glass jar or airtight container and refrigerate — keeps for up to one week.",
+    "To cook an omelet: lightly oil a non-stick pan and set over medium-high heat. Pour in about 120 ml (½ cup) of batter and tilt to spread into a thin circle.",
+    "Cook until the edges set and bubbles appear across the surface, then flip and cook the other side for a minute until lightly golden."
+  ],
+  "notes": "For sweet dishes like French toast, omit the garlic and onion powder. Cook the batter before freezing — it stores better than the raw mix. Watch the heat; lower it if the batter sticks."
+}

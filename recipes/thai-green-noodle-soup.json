@@ -1,0 +1,114 @@
+{
+  "id": "thai-green-noodle-soup",
+  "name": "Thai Green Noodle Soup",
+  "description": "A fragrant 15-minute soup of green curry paste, coconut milk, and instant noodles — light, quick, and packed with flavour.",
+  "cuisine": "Thai",
+  "servings": 1,
+  "prep": 2,
+  "cook": 10,
+  "tags": ["Dinner", "Lunch", "Quick", "Budget friendly", "One-pot", "Soup"],
+  "liked_by": ["Jack", "Lucas", "Fleur", "John"],
+  "glyph": "🍲",
+  "c1": "#dcedc8",
+  "c2": "#33691e",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "green curry paste",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "green_curry_paste",
+      "category": "oils & condiments",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "coconut milk",
+      "qty": 100,
+      "unit": "ml",
+      "type": "vol",
+      "key": "coconut_milk",
+      "category": "tinned goods",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "boiling water",
+      "qty": 350,
+      "unit": "ml",
+      "type": "vol",
+      "key": "boiling_water",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "instant ramen noodles",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "instant_ramen_noodles",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": "including seasoning packet"
+    },
+    {
+      "item": "green beans",
+      "qty": 50,
+      "unit": "g",
+      "type": "mass",
+      "key": "green_beans",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "lime",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lime",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "use juice of ½, rest cut into wedges to serve"
+    },
+    {
+      "item": "green chilli, finely sliced",
+      "qty": 0.5,
+      "unit": "piece",
+      "type": "count",
+      "key": "green_chilli",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "beansprouts",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "beansprouts",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "handful"
+    },
+    {
+      "item": "Thai basil or basil leaves",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "basil",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "small handful, optional"
+    }
+  ],
+  "steps": [
+    "Place a saucepan over a medium heat. Add the green curry paste and cook for 1 minute, stirring constantly until the paste separates slightly.",
+    "Add the coconut milk and the measured boiling water and bring to the boil. Add the instant noodles, their seasoning packets and the green beans to the saucepan. Cook for 2–3 minutes until the noodles are tender.",
+    "Season with the lime juice, then cut any leftover lime into wedges to serve.",
+    "Sprinkle with chilli slices, beansprouts and basil, if using."
+  ],
+  "notes": "Curry paste is such a versatile ingredient — using a shop-bought one is actually cheaper than making your own."
+}

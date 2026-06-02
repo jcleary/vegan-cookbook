@@ -1,0 +1,124 @@
+{
+  "id": "speedy-veggie-noodles",
+  "name": "Speedy Veggie Noodles",
+  "description": "A microwave veggie noodle stir-fry ready in under 10 minutes — no hob required, just shake, zap, and serve.",
+  "cuisine": "East Asian",
+  "servings": 2,
+  "prep": 4,
+  "cook": 6,
+  "tags": ["Dinner", "Lunch", "Quick", "Microwave"],
+  "liked_by": ["Jack", "Lucas", "Fleur", "Sally", "John"],
+  "glyph": "🥦",
+  "c1": "#b8dba0",
+  "c2": "#2d6e2d",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "soy sauce",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "soy_sauce",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "caster sugar",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "caster_sugar",
+      "category": "baking",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "sriracha or other hot sauce",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "sriracha",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "straight-to-wok pre-cooked noodles",
+      "qty": 300,
+      "unit": "g",
+      "type": "mass",
+      "key": "wok_noodles",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": "1 packet"
+    },
+    {
+      "item": "broccoli, broken into florets",
+      "qty": 0.5,
+      "unit": "piece",
+      "type": "count",
+      "key": "broccoli",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "half a head"
+    },
+    {
+      "item": "red pepper, finely sliced",
+      "qty": 0.5,
+      "unit": "piece",
+      "type": "count",
+      "key": "red_pepper",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "red onion, finely sliced",
+      "qty": 0.5,
+      "unit": "piece",
+      "type": "count",
+      "key": "red_onion",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "kale, ribs removed, roughly torn",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "kale",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "large handful"
+    },
+    {
+      "item": "beansprouts",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "beansprouts",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "large handful"
+    },
+    {
+      "item": "sesame seeds",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "sesame_seeds",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": "to serve"
+    }
+  ],
+  "steps": [
+    "In a large microwave-safe container with a lid, mix together the soy sauce, caster sugar and sriracha.",
+    "Add the noodles, broccoli, red pepper and red onion. Pop the lid on and shake everything around to mix thoroughly.",
+    "Microwave on high for 3 minutes, stirring once. Add the kale and beansprouts, then cook for a further 3 minutes.",
+    "Sprinkle with sesame seeds to serve."
+  ],
+  "notes": "Buy a pre-prepared bag of stir-fry veg to skip the chopping entirely. You can also drizzle with a little sesame oil or extra sriracha before serving."
+}

@@ -16,7 +16,7 @@ If given a URL, fetch the page and parse the recipe content.
 
 If given a screenshot of a website, read the text from the image.
 
-If given a photo of a recipe book page, read the text — and also look for any photo of the completed dish in the same image or nearby (e.g. a photo on the same page or the facing page). If there's a dish photo, crop it and save to `images/recipes/<id>.jpg`.
+If given a photo of a recipe book page, read the text — and also look for any photo of the completed dish in the same image or nearby (e.g. a photo on the same page or the facing page). If there's a dish photo, crop it and save to `public/images/recipes/<id>.jpg`.
 
 ### 2. Ask about family preferences
 
@@ -75,13 +75,13 @@ Save to `recipes/<id>.json` using this schema:
 
 **From a website URL:** If a clear hero/dish photo exists on the page, download it:
 ```bash
-wget -O images/recipes/<id>.jpg "<image-url>"
+wget -O public/images/recipes/<id>.jpg "<image-url>"
 ```
 
-**From a cookbook photo:** If the image contains a photo of the finished dish, crop it from the original image and save to `images/recipes/<id>.jpg`.
+**From a cookbook photo:** If the image contains a photo of the finished dish, crop it from the original image and save to `public/images/recipes/<id>.jpg`.
 
 If no image is available, skip this step — a placeholder will be used.
 
 ## Output
 
-Confirm the file was written: `recipes/<id>.json` (and `images/recipes/<id>.jpg` if an image was saved).
+Confirm the file was written: `recipes/<id>.json` (and `public/images/recipes/<id>.jpg` if an image was saved).

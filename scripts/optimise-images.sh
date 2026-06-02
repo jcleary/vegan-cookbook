@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Resizes images over 120KB in images/cuisine and images/recipes to max 800px wide
+# Resizes images over 120KB in public/images/cuisine and public/images/recipes to max 800px wide
 # at 75% JPEG quality, replacing originals in place.
 
 set -euo pipefail
@@ -9,7 +9,7 @@ ROOT="$SCRIPT_DIR/.."
 LIMIT_KB=150
 MAX_PX=800
 QUALITY=75
-DIRS=("$ROOT/images/cuisine" "$ROOT/images/recipes")
+DIRS=("$ROOT/public/images/cuisine" "$ROOT/public/images/recipes")
 
 found=0
 processed=0

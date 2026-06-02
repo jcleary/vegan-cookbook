@@ -220,7 +220,7 @@ export default function Recipe({ id, recipes, navigate }) {
       </section>
 
       {/* CONTROL BAR */}
-      <section className="wrap" style={{ marginTop: 40 }}>
+      <section className="wrap no-print" style={{ marginTop: 40 }}>
         <div className="card recipe-controls" style={{ padding: '18px 22px', display: 'flex', gap: 28, flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', background: 'var(--bg-2)' }}>
           <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontWeight: 800, fontSize: 14, color: 'var(--ink)' }}>
@@ -253,7 +253,7 @@ export default function Recipe({ id, recipes, navigate }) {
                   </span>
                 )}
               </div>
-              <p style={{ fontSize: 13.5, color: 'var(--muted)', marginBottom: 8 }}>Tap an item to check it off as you go.</p>
+              <p className="no-print" style={{ fontSize: 13.5, color: 'var(--muted)', marginBottom: 8 }}>Tap an item to check it off as you go.</p>
               <ul style={{ listStyle: 'none', margin: '8px 0 0', padding: 0 }}>
                 {recipe.ingredients.map((ing, i) => (
                   <IngredientRow key={i} ing={ing} system={system} mult={mult} />
@@ -298,7 +298,7 @@ export default function Recipe({ id, recipes, navigate }) {
 
       {/* MORE */}
       {moreToShow.length > 0 && (
-        <section className="wrap" style={{ marginTop: 74, paddingBottom: 20 }}>
+        <section className="wrap no-print" style={{ marginTop: 74, paddingBottom: 20 }}>
           <h2 style={{ fontSize: 28, marginBottom: 20 }}>More to try</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))', gap: 22 }}>
             {moreToShow.map(r => <RecipeCard key={r.id} recipe={r} navigate={navigate} />)}

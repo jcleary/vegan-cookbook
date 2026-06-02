@@ -1,0 +1,124 @@
+{
+  "id": "sesame-peanut-noodles",
+  "name": "Sesame & Peanut Noodles",
+  "description": "A 15-minute storecupboard noodle bowl coated in a creamy peanut and sesame sauce — fast, satisfying, and endlessly adaptable.",
+  "cuisine": "East Asian",
+  "servings": 2,
+  "prep": 5,
+  "cook": 10,
+  "tags": ["Dinner", "Lunch", "Quick", "Budget friendly"],
+  "liked_by": ["Jack", "Lucas", "Fleur", "John"],
+  "glyph": "🍜",
+  "c1": "#f2c4a0",
+  "c2": "#8b5e30",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "udon or any noodles",
+      "qty": 200,
+      "unit": "g",
+      "type": "mass",
+      "key": "noodles",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "garlic powder",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "garlic_powder",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "sesame oil",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "sesame_oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "peanut butter",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "peanut_butter",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "lime, juice only",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lime",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "soy sauce",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "soy_sauce",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground ginger",
+      "qty": 0.5,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ground_ginger",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "water",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "water",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "sesame seeds",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "sesame_seeds",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": "to serve"
+    },
+    {
+      "item": "spring onions, finely sliced",
+      "qty": 2,
+      "unit": "piece",
+      "type": "count",
+      "key": "spring_onions",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "to serve"
+    }
+  ],
+  "steps": [
+    "Bring a large pan of water to the boil, add the noodles, and cook for a few minutes until al dente, then drain.",
+    "Mix together the garlic powder, sesame oil, peanut butter, lime juice, soy sauce, ground ginger and 2 tablespoons of water until you have a smooth sauce.",
+    "Pour the sauce over the drained noodles and combine off the heat.",
+    "Serve sprinkled with sesame seeds and sliced spring onions."
+  ],
+  "notes": "Try sautéing sliced red peppers, carrots, mushrooms or sugar snaps and tossing through with the noodles. A splash of coconut milk makes the sauce extra creamy."
+}

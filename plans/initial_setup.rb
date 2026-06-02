@@ -1,96 +1,189 @@
-# Recipe Website — Claude Build Prompt
+# Recipe Website — Build Plan
 
-Build me a personal recipe website to be hosted on GitHub Pages (fully static, no backend). Here are the requirements:
+A personal vegan recipe website hosted on GitHub Pages (fully static, no backend).
+
+---
+
+## Technology Stack
+
+- **React + Vite** — component-based UI, Vite handles bundling and static output
+- **Hash routing** — `/#/`, `/#/recipe/:id`, `/#/planner` (avoids GitHub Pages SPA routing issues)
+- **Fuse.js** (npm package) — fuzzy search across name, ingredients, and tags
+- **GitHub Actions** — auto-deploys on push to `main` (runs build, pushes `dist/` to `gh-pages` branch)
+- **localStorage** — persists weekly planner selections
+- **No backend, no SSR** — fully static `dist/` output
 
 ---
 
 ## Recipe Storage
 
-- Each recipe lives as its own JSON file inside a `/recipes` folder
-- A build script (Node.js) scans the `/recipes` folder and combines all individual recipe JSON files into a single `recipes.json` index file used by the site
-- Each recipe JSON file should follow this structure:
+- Each recipe lives as its own JSON file inside `/recipes/`
+- `build.js` (Node.js) scans `/recipes/` and combines all files into `public/recipes.json`
+- Vite then bundles the app against `public/recipes.json` as a static asset
+- `package.json` build script: `"build": "node build.js && vite build"`
+
+### Recipe JSON schema
 
 ```json
 {
   "id": "spaghetti-bolognese",
   "name": "Spaghetti Bolognese",
-  "description": "A classic Italian meat sauce",
+  "description": "A classic Italian pasta dish with a rich tomato sauce.",
+  "cuisine": "Italian",
   "servings": 4,
-  "tags": ["pasta", "italian", "weeknight"],
+  "prep": 15,
+  "cook": 30,
+  "tags": ["pasta", "weeknight", "freezer-friendly"],
   "liked_by": ["kids", "dad", "mum"],
   "ingredients": [
-    { "item": "spaghetti", "amount": 400, "unit": "g", "category": "pasta & rice" },
-    { "item": "beef mince", "amount": 500, "unit": "g", "category": "meat" }
+    {
+      "item": "spaghetti",
+      "qty": 400,
+      "unit": "g",
+      "type": "mass",
+      "key": "pasta",
+      "category": "pasta & rice",
+      "staple": false
+    },
+    {
+      "item": "olive oil",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "olive oil",
+      "category": "oils & condiments",
+      "staple": true
+    }
   ],
   "steps": [
     "Boil salted water and cook spaghetti according to packet instructions.",
-    "Brown the mince in a pan over high heat."
+    "Heat the oil in a pan over medium heat."
   ],
   "notes": "Freezes well. Make double and freeze half."
 }
 ```
 
----
+### Ingredient field reference
 
-## Site Structure
+| Field | Type | Purpose |
+|-------|------|---------|
+| `item` | string | Display name |
+| `qty` | number | Metric base quantity |
+| `unit` | string | Metric base unit (`g`, `ml`, `tbsp`, `tsp`, `piece`, `clove`, etc.) |
+| `type` | string | `"mass"` / `"vol"` / `"spoon"` / `"count"` — drives unit conversion |
+| `key` | string | Canonical key for pantry search matching |
+| `category` | string | Ingredient category for shopping list grouping |
+| `staple` | boolean | `true` = assumed always on hand; ignored by pantry search and shopping list |
+| `note` | string? | Optional clarification (e.g. `"optional"`, `"soaked overnight"`) |
 
-- `index.html` — homepage with search, filters, and recipe grid
-- `recipe.html` — single recipe view (loads recipe by URL parameter, e.g. `recipe.html?id=spaghetti-bolognese`)
-- `planner.html` — weekly meal planner and shopping list
-- `recipes.json` — the combined index built by the build script
-- `/recipes/` — folder of individual recipe JSON files
-- `build.js` — the Node.js build script
-- `style.css` — shared stylesheet
-- `app.js` — shared JavaScript
+### Unit conversion
 
----
+- Ingredients store metric base values
+- Recipe page offers a unit toggle: **Metric / UK Imperial / US Imperial**
+- `type: "mass"` converts g ↔ oz/lb; `type: "vol"` converts ml ↔ fl oz/cups; `type: "spoon"` and `type: "count"` display identically across all systems
 
-## Search & Filter (index.html)
+### Portion scaling
 
-- Search box that searches recipe name, ingredients, and tags simultaneously using fuzzy matching (use Fuse.js via CDN)
-- Filter buttons for `liked_by` family members (dynamically generated from the data)
-- Filter buttons for tags/categories (dynamically generated from the data)
-- Multiple filters can be active at the same time
-- Recipe results shown as cards with name, description, tags, and liked_by indicators
-- Clicking a card goes to `recipe.html?id=...`
-
----
-
-## Recipe Page (recipe.html)
-
-- Loads and displays the full recipe from `recipes.json` using the `id` URL parameter
-- Shows: name, description, servings, ingredients, steps, notes, tags, liked_by
-- Has an "Add to weekly planner" button that saves the recipe ID to localStorage
+- Recipe page offers a portion scaler: **1× / 2× / 3× / 4×**
+- All `qty` values are multiplied live; `type: "count"` items scale as whole numbers
 
 ---
 
-## Weekly Planner & Shopping List (planner.html)
+## Images
 
-- Shows all recipes currently saved to the weekly planner (read from localStorage)
-- Each planned recipe can be removed
-- A shopping list is automatically generated by combining all ingredients across planned recipes
-- Ingredients with the same item name and unit are combined (e.g. two recipes needing garlic cloves are summed)
-- Shopping list is grouped by ingredient category
-- A print button triggers a clean print view of the shopping list
-- A "Clear planner" button resets everything
+- **Cuisine placeholder**: `/images/cuisine/<cuisine-name>.jpg` (e.g. `/images/cuisine/italian.jpg`)
+  - Lowercase, spaces replaced with hyphens to match cuisine field values
+- **Recipe image** (optional): `/images/recipes/<recipe-id>.jpg` (e.g. `/images/recipes/spaghetti-bolognese.jpg`)
+  - If present, shown instead of the cuisine placeholder
+- Fallback logic: check for recipe image → fall back to cuisine image
+
+---
+
+## Project Structure
+
+```
+/
+├── recipes/                        # Individual recipe JSON files (source)
+├── images/
+│   ├── cuisine/                    # Cuisine placeholder images
+│   └── recipes/                    # Optional per-recipe images
+├── src/
+│   ├── main.jsx                    # React entry point, mounts App
+│   ├── App.jsx                     # Hash router + top-level layout
+│   ├── style.css                   # Global stylesheet (Theme A only)
+│   ├── helpers.js                  # Unit conversion + portion scaling logic
+│   ├── pages/
+│   │   ├── Home.jsx                # Search, filters, recipe grid
+│   │   ├── Recipe.jsx              # Single recipe view
+│   │   └── Planner.jsx             # Weekly planner + shopping list
+│   └── components/                 # Shared UI components
+├── public/
+│   └── recipes.json                # Combined recipe index (generated by build.js)
+├── build.js                        # Combines /recipes/*.json → public/recipes.json
+├── index.html                      # Single HTML entry point
+├── vite.config.js
+├── package.json
+└── .github/
+    └── workflows/
+        └── deploy.yml              # Build + deploy to gh-pages branch
+```
+
+---
+
+## Home Page — `/#/`
+
+- Search box: fuzzy search across `name`, `description`, `tags`, and ingredient `item` values (Fuse.js)
+- Filter chips, all dynamically generated from data, multiple active simultaneously:
+  - **Family**: from `liked_by` values (e.g. Kids, Dad, Mum)
+  - **Cuisine**: from `cuisine` values (e.g. Italian, Indian, Mexican)
+  - **Tags**: from `tags` values
+- Recipe grid: cards showing name, description, cuisine, prep+cook time, tags, liked_by indicators, and recipe/cuisine image
+- Clicking a card navigates to `/#/recipe/:id`
+
+---
+
+## Recipe Page — `/#/recipe/:id`
+
+- Loads recipe from `recipes.json` by `id`
+- Displays: image, name, description, cuisine, prep time, cook time, servings, tags, liked_by
+- **Unit toggle**: Metric / UK Imperial / US Imperial
+- **Portion scaler**: 1× 2× 3× 4× (updates all quantities live)
+- Ingredients list (scaled + converted)
+- Numbered steps
+- Notes section
+- "Add to planner" button — saves recipe ID to localStorage
+
+---
+
+## Planner Page — `/#/planner`
+
+- Lists all recipes saved to the weekly planner (from localStorage)
+- Each recipe shows name, image, and a remove button
+- "Clear planner" button resets everything
+- **Shopping list** — auto-generated from all planned recipes:
+  - Staple ingredients (`staple: true`) are excluded
+  - Ingredients with the same `item` + `unit` are combined (quantities summed)
+  - List is grouped by `category`
+  - Quantities respect the current portion scale of each planned recipe
+- Print button triggers a clean print stylesheet view of the shopping list
+
+---
+
+## Visual Design
+
+- **Theme**: "Garden Table" — warm cream background (`#f4eddd`), sage/olive green primary (`#5d7043`), terracotta accent (`#cb764b`)
+- **Fonts**: Newsreader (display/headings), Hanken Grotesk (body), Caveat (script accents) — loaded from Google Fonts
+- **Mobile-first**, responsive layout
+- Print stylesheet scoped to shopping list output
 
 ---
 
 ## Technical Requirements
 
-- Vanilla HTML, CSS, and JavaScript only (no frameworks)
-- Fuse.js loaded via CDN for fuzzy search
-- All data loading uses `fetch()` against `recipes.json`
-- `localStorage` used for persisting the weekly planner selections
-- Must work correctly when served by GitHub Pages
-- The build script (`build.js`) should be run with `node build.js` and outputs `recipes.json` to the root
-- Include a `package.json` with a `"build": "node build.js"` script
-- Include 5 varied example recipes to demonstrate the structure
-
----
-
-## Style
-
-- Clean, minimal, functional design — this is a personal site, not a showcase
-- Mobile friendly
-- Print stylesheet for the shopping list
+- React 18, Vite 5+
+- Fuse.js for fuzzy search
+- No CSS framework — custom CSS using the design token variables from the theme
+- `localStorage` for planner persistence
+- `public/recipes.json` loaded via `fetch()` at app startup
+- 10+ varied example recipes covering multiple cuisines to demonstrate all features
+- GitHub Actions workflow: install → build → deploy `dist/` to `gh-pages` branch

@@ -78,9 +78,17 @@ Save to `recipes/<id>.json` using this schema:
 wget -O public/images/recipes/<id>.jpg "<image-url>"
 ```
 
-**From a cookbook photo:** If the image contains a photo of the finished dish, crop it from the original image and save to `public/images/recipes/<id>.jpg`.
+**From a cookbook photo:** If the image contains a photo of the finished dish, crop it from the original image and save to `public/images/recipes/<id>.jpg`:
+```bash
+magick <source> -crop <WxH+X+Y> +repage public/images/recipes/<id>.jpg
+```
 
 If no image is available, skip this step — a placeholder will be used.
+
+After saving any image, run the optimiser to resize and compress it:
+```bash
+bash scripts/optimise-images.sh
+```
 
 ## Output
 

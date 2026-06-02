@@ -1,0 +1,155 @@
+{
+  "id": "chickpea-curry",
+  "name": "Chickpea Curry",
+  "description": "A Caribbean-inspired chickpea curry from Trinidad, similar to a dhal — ready in about 25 minutes and best served with roti for scooping.",
+  "cuisine": "Caribbean",
+  "servings": 2,
+  "prep": 5,
+  "cook": 20,
+  "tags": ["Dinner", "Quick", "Budget friendly"],
+  "liked_by": [],
+  "glyph": "🍛",
+  "c1": "#F5D06A",
+  "c2": "#C47A1E",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "flavourless oil",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "garlic cloves, finely grated",
+      "qty": 3,
+      "unit": "piece",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "red chilli, finely grated or chopped",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "red_chilli",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "onion, chopped",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "onion",
+      "category": "fresh produce",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "fresh thyme sprigs",
+      "qty": 3,
+      "unit": "piece",
+      "type": "count",
+      "key": "thyme",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "use leaves only"
+    },
+    {
+      "item": "ground cumin",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ground_cumin",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground turmeric",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ground_turmeric",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "dried fenugreek",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "dried_fenugreek",
+      "category": "herbs & spices",
+      "staple": false,
+      "note": "optional"
+    },
+    {
+      "item": "curry powder",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "curry_powder",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "chickpeas, drained and rinsed",
+      "qty": 400,
+      "unit": "g",
+      "type": "mass",
+      "key": "chickpeas",
+      "category": "tinned goods",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "vegetable stock",
+      "qty": 250,
+      "unit": "ml",
+      "type": "vol",
+      "key": "vegetable_stock",
+      "category": "tinned goods",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "coriander leaves, roughly chopped",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "coriander",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "optional, small handful"
+    },
+    {
+      "item": "salt and pepper",
+      "qty": 1,
+      "unit": "pinch",
+      "type": "count",
+      "key": "salt_pepper",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    }
+  ],
+  "steps": [
+    "Heat the oil in a large heavy-based saucepan, then add the garlic, chilli and onion. Fry for 2–3 minutes until beginning to soften.",
+    "Add the thyme leaves and spices with a splash of water to prevent scorching. Fry for a further 2–3 minutes.",
+    "Add the chickpeas and stock, season well, cover and cook for 10–15 minutes until the sauce has thickened.",
+    "Optionally use a stick blender to mash up some of the curry for a thicker texture, or remove a small amount and mash with a fork before stirring it back in.",
+    "Sprinkle with coriander if using, and serve."
+  ],
+  "notes": "Best served with roti or flatbread for scooping. Inspired by the Caribbean flavours of Trinidad."
+}

@@ -73,7 +73,7 @@ export default function Home({ recipes, navigate }) {
       ? fuse.search(query.trim()).map(r => r.item)
       : recipes
 
-    if (activeFamily.size) list = list.filter(r => r.liked_by?.some(n => activeFamily.has(n)))
+    if (activeFamily.size) list = list.filter(r => [...activeFamily].every(n => r.liked_by?.includes(n)))
     if (activeCuisines.size) list = list.filter(r => activeCuisines.has(r.cuisine))
     if (activeTags.size) list = list.filter(r => r.tags?.some(t => activeTags.has(t)))
 

@@ -1,0 +1,166 @@
+{
+  "id": "corn-and-bean-taquitos",
+  "name": "Corn & Bean Taquitos",
+  "description": "Crispy shallow-fried tortilla rolls stuffed with spiced black beans and sweetcorn, served with smashed avocado, lettuce, and tomato.",
+  "cuisine": "Mexican",
+  "servings": 4,
+  "prep": 15,
+  "cook": 10,
+  "tags": ["Dinner", "Quick", "Kid friendly", "Budget friendly"],
+  "liked_by": ["Jack", "Lucas", "Fleur", "Sally", "John"],
+  "glyph": "🌮",
+  "c1": "#fef3c7",
+  "c2": "#b45309",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "black beans, drained and rinsed",
+      "qty": 400,
+      "unit": "g",
+      "type": "mass",
+      "key": "black_beans",
+      "category": "tinned goods",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "sweetcorn, drained",
+      "qty": 200,
+      "unit": "g",
+      "type": "mass",
+      "key": "sweetcorn",
+      "category": "tinned goods",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "ground cumin",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ground_cumin",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "chipotle paste",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "chipotle_paste",
+      "category": "oils & condiments",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "red onion, finely chopped",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "red_onion",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "½ for filling, ½ to serve"
+    },
+    {
+      "item": "garlic cloves, finely grated",
+      "qty": 3,
+      "unit": "piece",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "coriander leaves, finely chopped",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "coriander",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "small handful"
+    },
+    {
+      "item": "lime",
+      "qty": 2,
+      "unit": "piece",
+      "type": "count",
+      "key": "lime",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "juice of ½ for filling, zest and juice of 1 for guacamole"
+    },
+    {
+      "item": "small corn tortillas",
+      "qty": 12,
+      "unit": "piece",
+      "type": "count",
+      "key": "corn_tortillas",
+      "category": "pasta & rice",
+      "staple": false,
+      "note": "corn not wheat for crispiest result"
+    },
+    {
+      "item": "flavourless oil",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": "to fry"
+    },
+    {
+      "item": "avocado",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "avocado",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "to serve"
+    },
+    {
+      "item": "lettuce, shredded",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lettuce",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "¼ head, to serve"
+    },
+    {
+      "item": "tomato, finely chopped",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "tomato",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "to serve"
+    },
+    {
+      "item": "salt and pepper",
+      "qty": 1,
+      "unit": "pinch",
+      "type": "count",
+      "key": "salt_pepper",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    }
+  ],
+  "steps": [
+    "In a large bowl, mash the beans with a potato masher or the back of a fork until mostly broken up. Add the sweetcorn, spices, onion, garlic and coriander. Mix well to combine. Season with salt, pepper and the lime juice.",
+    "Heat the tortillas for 30 seconds on high in the microwave (this helps them be more malleable).",
+    "Spread the filling down one end of the tortillas and roll up very tightly, placing them seam-side down on a plate or tray while you repeat with the rest.",
+    "Add enough oil to a large frying pan to cover the base. Add the taquitos and cook seam-side down for 1–2 minutes, then flip and cook for another 1–2 minutes. Repeat until you have cooked them all.",
+    "Mash the flesh of the avocado with the zest and juice of the lime and season to taste.",
+    "Serve the taquitos with the mashed avocado, lettuce, onion and tomato."
+  ],
+  "notes": "You can also bake at 180°C (350°F / Gas Mark 4) for 15–20 minutes for a healthier, hands-off version. Try filling with sweet potato or peppers too."
+}

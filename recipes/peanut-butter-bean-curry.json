@@ -1,0 +1,173 @@
+{
+  "id": "peanut-butter-bean-curry",
+  "name": "Peanut Butter Bean Curry",
+  "description": "A silky-smooth, mild curry with peanut butter, butter beans, and coconut milk — one of the fastest curries imaginable.",
+  "cuisine": "Indian",
+  "servings": 4,
+  "prep": 5,
+  "cook": 15,
+  "tags": ["Dinner", "Quick", "Budget friendly", "Comfort food", "High protein", "Freezer-friendly"],
+  "liked_by": ["Jack", "Fleur", "Sally", "John"],
+  "glyph": "🍛",
+  "c1": "#fde68a",
+  "c2": "#92400e",
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "olive oil",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "olive_oil",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "onion, finely sliced",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "onion",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "garlic cloves, finely grated",
+      "qty": 2,
+      "unit": "piece",
+      "type": "count",
+      "key": "garlic",
+      "category": "fresh produce",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground coriander",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ground_coriander",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "ground ginger",
+      "qty": 1,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "ground_ginger",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "chilli flakes",
+      "qty": 0.5,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "chilli_flakes",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "tomato purée",
+      "qty": 2,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "tomato_puree",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "peanut butter",
+      "qty": 5,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "peanut_butter",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "butter beans, drained and rinsed",
+      "qty": 2,
+      "unit": "piece",
+      "type": "count",
+      "key": "butter_beans",
+      "category": "tinned goods",
+      "staple": false,
+      "note": "400g cans"
+    },
+    {
+      "item": "coconut milk",
+      "qty": 400,
+      "unit": "ml",
+      "type": "vol",
+      "key": "coconut_milk",
+      "category": "tinned goods",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "soy sauce",
+      "qty": 1,
+      "unit": "tbsp",
+      "type": "spoon",
+      "key": "soy_sauce",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "lime, zest and juice",
+      "qty": 1,
+      "unit": "piece",
+      "type": "count",
+      "key": "lime",
+      "category": "fresh produce",
+      "staple": false,
+      "note": null
+    },
+    {
+      "item": "fresh spinach",
+      "qty": 200,
+      "unit": "g",
+      "type": "mass",
+      "key": "spinach",
+      "category": "fresh produce",
+      "staple": false,
+      "note": "or 5 cubes frozen spinach"
+    },
+    {
+      "item": "Tabasco",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "tabasco",
+      "category": "oils & condiments",
+      "staple": true,
+      "note": null
+    },
+    {
+      "item": "salt",
+      "qty": 2,
+      "unit": "tsp",
+      "type": "spoon",
+      "key": "salt",
+      "category": "herbs & spices",
+      "staple": true,
+      "note": null
+    }
+  ],
+  "steps": [
+    "Heat the olive oil in a deep heavy-based saucepan. Add the onion and cook without colour for 5 minutes until translucent, then add the garlic and spices. Cook for a further minute until fragrant.",
+    "Add the tomato purée and cook for 1 minute until it deepens in colour, then add the peanut butter, butter beans, coconut milk and soy sauce.",
+    "Cook for 10 minutes until the curry has thickened slightly. Season with lime zest and juice and salt. Add the spinach, stir until it wilts down, then serve."
+  ],
+  "notes": "Swap the butter beans for any bean — it works particularly well with chickpeas."
+}

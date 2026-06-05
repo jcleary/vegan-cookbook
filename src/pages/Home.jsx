@@ -87,13 +87,8 @@ export default function Home({ recipes, navigate }) {
     setActiveTags(new Set())
   }
 
-  const featured = useMemo(() =>
-    recipes.filter(r => ['tomato-basil-rigatoni', 'chana-saag', 'chocolate-olive-oil-cake'].includes(r.id)),
-    [recipes]
-  )
-
-  const quick = useMemo(() =>
-    recipes.filter(r => r.prep + r.cook <= 35).slice(0, 3),
+  const alphabetical = useMemo(() =>
+    [...recipes].sort((a, b) => a.name.localeCompare(b.name)),
     [recipes]
   )
 
@@ -206,37 +201,11 @@ export default function Home({ recipes, navigate }) {
           )}
         </section>
       ) : (
-        <>
-          {/* FEATURED */}
-          <section className="wrap" style={{ marginTop: 64 }}>
-            <div style={{ marginBottom: 22 }}>
-              <span className="eyebrow">From our table to yours</span>
-              <h2 style={{ fontSize: 32, marginTop: 8 }}>This week's favourites</h2>
-            </div>
+          <section className="wrap" style={{ marginTop: 64, paddingBottom: 60 }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))', gap: 22 }}>
-              {featured.map(r => <RecipeCard key={r.id} recipe={r} navigate={navigate} />)}
+              {alphabetical.map(r => <RecipeCard key={r.id} recipe={r} navigate={navigate} />)}
             </div>
           </section>
-
-          {/* QUICK WINS */}
-          <section className="wrap" style={{ marginTop: 72, paddingBottom: 60 }}>
-            <div style={{
-              background: 'var(--primary)', borderRadius: 'var(--radius-l)',
-              padding: '40px 40px', color: '#fff', position: 'relative', overflow: 'hidden',
-            }}>
-              <span style={{ position: 'absolute', right: -20, bottom: -30, fontSize: 160, opacity: .12 }}>⏱️</span>
-              <span className="script" style={{ fontSize: 26, color: 'color-mix(in srgb, #fff 88%, var(--accent))' }}>
-                Busy weeknight?
-              </span>
-              <h2 style={{ color: '#fff', fontSize: 30, marginTop: 4, marginBottom: 20 }}>
-                Dinner on the table in 35 minutes.
-              </h2>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 18, position: 'relative' }}>
-                {quick.map(r => <RecipeCard key={r.id} recipe={r} navigate={navigate} />)}
-              </div>
-            </div>
-          </section>
-        </>
       )}
     </div>
   )

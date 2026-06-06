@@ -206,6 +206,7 @@ img { display: block; max-width: 100%; }
   .wrap { padding: 0 18px; }
   .nav-label { display: none; }
   .recipe-controls { flex-direction: column; align-items: stretch !important; }
+  .hero-collage { display: none !important; }
 }
 
 /* print-recipe section: hidden on screen but fully rendered so images load */

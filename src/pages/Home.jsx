@@ -87,10 +87,10 @@ export default function Home({ recipes, navigate }) {
     setActiveTags(new Set())
   }
 
-  const alphabetical = useMemo(() =>
-    [...recipes].sort((a, b) => a.name.localeCompare(b.name)),
-    [recipes]
-  )
+  const displayed = useMemo(() => {
+    if (hasFilters) return results
+    return [...recipes].sort((a, b) => a.name.localeCompare(b.name))
+  }, [hasFilters, results, recipes])
 
   return (
     <div className="screen">
@@ -105,34 +105,6 @@ export default function Home({ recipes, navigate }) {
             <p style={{ fontSize: 18, color: 'var(--ink-soft)', marginTop: 22, maxWidth: 460 }}>
               Every dish we actually make — vegan, unfussy and tested round the kitchen table.
             </p>
-
-            {/* search bar */}
-            <div style={{ marginTop: 26, display: 'flex', gap: 10, maxWidth: 480 }}>
-              <div style={{
-                flex: 1, display: 'flex', alignItems: 'center', gap: 10,
-                background: 'var(--surface)', border: '1.5px solid var(--line-strong)',
-                borderRadius: 999, padding: '4px 6px 4px 18px', boxShadow: 'var(--shadow-sm)',
-              }}>
-                <Icon name="search" size={19} style={{ color: 'var(--muted)', flexShrink: 0 }} />
-                <input
-                  value={query}
-                  onChange={e => setQuery(e.target.value)}
-                  placeholder="Search e.g. 'curry', 'pasta'…"
-                  style={{
-                    flex: 1, border: 'none', outline: 'none', background: 'transparent',
-                    fontSize: 16, color: 'var(--ink)', fontFamily: 'inherit', minWidth: 0,
-                  }}
-                />
-                {query && (
-                  <button
-                    onClick={() => setQuery('')}
-                    style={{ background: 'var(--bg-2)', border: 'none', width: 30, height: 30, borderRadius: 999, display: 'grid', placeItems: 'center', color: 'var(--ink-soft)', cursor: 'pointer', flexShrink: 0 }}
-                  >
-                    <Icon name="x" size={14} />
-                  </button>
-                )}
-              </div>
-            </div>
           </div>
 
           {/* hero collage */}
@@ -180,33 +152,60 @@ export default function Home({ recipes, navigate }) {
         </div>
       </section>
 
+      {/* SEARCH */}
+      <section className="wrap" style={{ marginTop: 16 }}>
+        <div style={{
+          display: 'flex', alignItems: 'center', gap: 12, height: 52,
+          background: 'var(--surface)', border: '1.5px solid var(--line-strong)',
+          borderRadius: 999, padding: '0 8px 0 20px', boxShadow: 'var(--shadow-sm)',
+        }}>
+          <Icon name="search" size={20} style={{ color: 'var(--muted)', flexShrink: 0 }} />
+          <input
+            value={query}
+            onChange={e => setQuery(e.target.value)}
+            placeholder="Search recipes e.g. 'curry', 'pasta'…"
+            style={{
+              flex: 1, border: 'none', outline: 'none', background: 'transparent',
+              fontSize: 17, color: 'var(--ink)', fontFamily: 'inherit', minWidth: 0,
+            }}
+          />
+          <button
+            onClick={() => setQuery('')}
+            style={{
+              background: query ? 'var(--bg-2)' : 'transparent',
+              border: 'none', width: 36, height: 36, borderRadius: 999,
+              display: 'grid', placeItems: 'center',
+              color: query ? 'var(--ink-soft)' : 'transparent',
+              cursor: query ? 'pointer' : 'default', flexShrink: 0,
+              pointerEvents: query ? 'auto' : 'none',
+            }}
+          >
+            <Icon name="x" size={15} />
+          </button>
+        </div>
+      </section>
+
       {/* RECIPE GRID */}
-      {hasFilters ? (
-        <section className="wrap" style={{ marginTop: 36, paddingBottom: 60 }}>
+      <section className="wrap" style={{ marginTop: 36, paddingBottom: 60 }}>
+        {hasFilters && (
           <p style={{ color: 'var(--muted)', fontSize: 14, fontWeight: 600, marginBottom: 22 }}>
-            {results.length} {results.length === 1 ? 'recipe' : 'recipes'} found
+            {displayed.length} {displayed.length === 1 ? 'recipe' : 'recipes'} found
           </p>
-          {results.length > 0 ? (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))', gap: 22 }}>
-              {results.map(r => <RecipeCard key={r.id} recipe={r} navigate={navigate} />)}
+        )}
+        {displayed.length > 0 ? (
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))', gap: 22 }}>
+            {displayed.map(r => <RecipeCard key={r.id} recipe={r} navigate={navigate} />)}
+          </div>
+        ) : (
+          <div style={{ textAlign: 'center', padding: '60px 20px', color: 'var(--muted)' }}>
+            <div style={{ width: 64, height: 64, borderRadius: 999, background: 'var(--bg-2)', display: 'grid', placeItems: 'center', margin: '0 auto 18px', color: 'var(--primary)' }}>
+              <Icon name="search" size={30} />
             </div>
-          ) : (
-            <div style={{ textAlign: 'center', padding: '60px 20px', color: 'var(--muted)' }}>
-              <div style={{ width: 64, height: 64, borderRadius: 999, background: 'var(--bg-2)', display: 'grid', placeItems: 'center', margin: '0 auto 18px', color: 'var(--primary)' }}>
-                <Icon name="search" size={30} />
-              </div>
-              <h3 style={{ fontSize: 22, color: 'var(--ink)' }}>No recipes found</h3>
-              <p style={{ marginTop: 8, fontSize: 15.5 }}>Try different search terms or remove some filters.</p>
-            </div>
-          )}
-        </section>
-      ) : (
-          <section className="wrap" style={{ marginTop: 64, paddingBottom: 60 }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))', gap: 22 }}>
-              {alphabetical.map(r => <RecipeCard key={r.id} recipe={r} navigate={navigate} />)}
-            </div>
-          </section>
-      )}
+            <h3 style={{ fontSize: 22, color: 'var(--ink)' }}>No recipes found</h3>
+            <p style={{ marginTop: 8, fontSize: 15.5 }}>Try different search terms or remove some filters.</p>
+          </div>
+        )}
+      </section>
     </div>
   )
 }
